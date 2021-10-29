@@ -4,6 +4,7 @@
         "strMeal": "Spicy Arrabiata Penne",
         "strCategory": "Vegetarian",
         "strArea": "Italian",
+        "strPrice":"$20",
         "strInstructions": "Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
     },
@@ -12,6 +13,7 @@
         "strMeal": "Fish pie",
         "strCategory": "Seafood",
         "strArea": "British",
+        "strPrice":"$22",
         "strInstructions": "Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg"
     },
@@ -20,6 +22,7 @@
         "strMeal": "Fish fofos",
         "strCategory": "Seafood",
         "strArea": "Portuguese",
+        "strPrice":"$21",
         "strInstructions": "Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg"
     },
@@ -28,6 +31,7 @@
         "strMeal": "Three Fish Pie",
         "strCategory": "Seafood",
         "strArea": "British",
+        "strPrice":"$25",
         "strInstructions": "Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg"
     },
@@ -36,6 +40,7 @@
         "strMeal": "Chicken Handi",
         "strCategory": "Chicken",
         "strArea": "Indian",
+        "strPrice":"$28",
         "strInstructions": "Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
     },
@@ -44,6 +49,7 @@
         "strMeal": "Chicken Congee",
         "strCategory": "Chicken",
         "strArea": "Chinese",
+        "strPrice":"$30",
         "strInstructions": "STEP 1 - MARINATING THE CHICKEN In a bowl, add chicken, salt, white pepper, ginger juice and then mix it together well. Set the chicken aside.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/1529446352.jpg"
     },
@@ -52,6 +58,7 @@
         "strMeal": "Chicken Karaage",
         "strCategory": "Chicken",
         "strArea": "Japanese",
+        "strPrice":"$33",
         "strInstructions": "Add the ginger, garlic, soy sauce, sake and sugar to a bowl and whisk to combine. Add the chicken, then stir to coat evenly.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg"
     },
@@ -60,6 +67,7 @@
         "strMeal": "Chicken Marengo",
         "strCategory": "Chicken",
         "strArea": "French",
+        "strPrice":"$35",
         "strInstructions": "Heat the oil in a large flameproof casserole dish and stir-fry the mushrooms until they start to soften. Add the chicken legs and cook.",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/qpxvuq1511798906.jpg"
     }

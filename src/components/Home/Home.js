@@ -9,6 +9,7 @@ import img2 from '../img/Beef.png';
 const Home = () => {
     return (
         <>
+        {/* banner */}
         <div className="banner">
             <Container>
                 <Row>

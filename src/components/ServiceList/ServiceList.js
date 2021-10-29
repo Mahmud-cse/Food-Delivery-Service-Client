@@ -3,7 +3,7 @@ import { Card, Col,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const ServiceList = (props) => {
-    const {idMeal,strMeal,strInstructions,strMealThumb}=props.value;
+    const {idMeal,strMeal,strInstructions,strMealThumb,strPrice}=props.value;
 
     return (
             <Col md={4} className="mb-5 mt-5">
@@ -14,6 +14,9 @@ const ServiceList = (props) => {
                           <Card.Text className="text-muted">
                             {strInstructions}
                           </Card.Text>
+                          <Card.Title className="text-center">
+                              {strPrice}
+                          </Card.Title>
                         </Card.Body>
                         <div className="mx-auto mb-3">
                           <Link to={`/serviceDetails/${idMeal}`}>
