@@ -19,7 +19,7 @@ const ServiceList = (props) => {
                           </Card.Title>
                         </Card.Body>
                         <div className="mx-auto mb-3">
-                          <Link to={`/serviceDetails/${idMeal}`}>
+                          <Link to={`/placeOrder/${idMeal}`}>
                             <Button variant="outline-primary">Order</Button>
                           </Link>
                         </div>

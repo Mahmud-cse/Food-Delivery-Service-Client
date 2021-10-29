@@ -9,7 +9,7 @@ const NavBar = () => {
   const {user,signOutUsingGoogle} = useAuth();
     return (
         <div>
-        <Navbar className="bg-light fixed-top" collapseOnSelect expand="lg">
+        <Navbar className="bg-light" collapseOnSelect expand="lg">
           {/* container */}
           <Container>
           <Navbar.Brand href="/home">
@@ -31,16 +31,16 @@ const NavBar = () => {
                   fontWeight: "bold",
                   color: "black"
                 }}>Home</NavLink>
-                <NavLink to="/doctors" className="f-13" style={{color:"black"}}   activeStyle={{
+                <NavLink to="/orders" className="f-13" style={{color:"black"}}   activeStyle={{
                   fontWeight: "bold",
                   color: "black"
                 }}>My Orders</NavLink>
-                <NavLink to="/blogs" className="f-13" style={{color:"black"}}   activeStyle={{
+                <NavLink to="/allOrders" className="f-13" style={{color:"black"}}   activeStyle={{
                     fontWeight: "bold",
                   color: "black"
                 }}>All Orders</NavLink>
 
-                <NavLink to="/about" className="f-13" style={{color:"black"}}   activeStyle={{
+                <NavLink to="/addService" className="f-13" style={{color:"black"}}   activeStyle={{
                   fontWeight: "bold",
                   color: "black"
                 }}>Add a Service</NavLink>

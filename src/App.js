@@ -11,6 +11,8 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 import AuthProvider from './components/Context/AuthProvider';
+import MyOrders from './components/MyOrders/MyOrders';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
          </Route>
          <Route exact path="/home">
            <Home />
+         </Route>
+         <Route exact path="/orders">
+           <MyOrders />
+         </Route>
+         <Route exact path="/placeOrder/:id">
+           <PlaceOrder />
          </Route>
          <Route exact path="/login">
            <Login />
