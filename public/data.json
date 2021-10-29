@@ -1,6 +1,6 @@
 [
     {
-        "idMeal": "52771",
+        "idMeal": "1",
         "strMeal": "Spicy Arrabiata Penne",
         "strCategory": "Vegetarian",
         "strArea": "Italian",
@@ -8,7 +8,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
     },
     {
-        "idMeal": "52802",
+        "idMeal": "2",
         "strMeal": "Fish pie",
         "strCategory": "Seafood",
         "strArea": "British",
@@ -16,7 +16,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg"
     },
     {
-        "idMeal": "53043",
+        "idMeal": "3",
         "strMeal": "Fish fofos",
         "strCategory": "Seafood",
         "strArea": "Portuguese",
@@ -24,7 +24,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg"
     },
     {
-        "idMeal": "52882",
+        "idMeal": "4",
         "strMeal": "Three Fish Pie",
         "strCategory": "Seafood",
         "strArea": "British",
@@ -32,7 +32,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg"
     },
     {
-        "idMeal": "52795",
+        "idMeal": "5",
         "strMeal": "Chicken Handi",
         "strCategory": "Chicken",
         "strArea": "Indian",
@@ -40,7 +40,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
     },
     {
-        "idMeal": "52956",
+        "idMeal": "6",
         "strMeal": "Chicken Congee",
         "strCategory": "Chicken",
         "strArea": "Chinese",
@@ -48,7 +48,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/1529446352.jpg"
     },
     {
-        "idMeal": "52831",
+        "idMeal": "7",
         "strMeal": "Chicken Karaage",
         "strCategory": "Chicken",
         "strArea": "Japanese",
@@ -56,7 +56,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg"
     },
     {
-        "idMeal": "52920",
+        "idMeal": "8",
         "strMeal": "Chicken Marengo",
         "strCategory": "Chicken",
         "strArea": "French",
