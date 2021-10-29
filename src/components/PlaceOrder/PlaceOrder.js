@@ -27,17 +27,30 @@ const PlaceOrder = () => {
     const { user } = useAuth();
 
     const onSubmit = data => {
-        console.log('successfull');
+        fetch('http://localhost:5000/addOrder', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                if (result.insertedId) {
+                    alert('Order processed Successfully');
+                    // reset();
+                }
+            })
     };
 
     return (
         <div className="m-5" >
-            <Container className="d-flex justify-content-center align-items-center">
-                <Row>
+            <Container >
+                <Row className="d-flex justify-content-center align-items-center">
                     <Col lg="6">
                         <img src={specificDetail?.strMealThumb} alt="" style={{ height: "200px" }} />
                         <h2>{specificDetail?.strMeal}</h2>
-                        <h4>{specificDetail?.strPrice}</h4>
+                        <h4>${specificDetail?.strPrice}</h4>
                         <p>{specificDetail?.strInstructions}</p>
                     </Col>
                     <Col lg="6">
@@ -47,8 +60,10 @@ const PlaceOrder = () => {
 
                             <input defaultValue={user.email} {...register("email", { required: true })} />
                             {errors.email && <span className="error">This field is required</span>}
+                            <input defaultValue="pending" {...register("status")} />
+                            <input placeholder="Enter exact food name please" defaultValue="" {...register("strMeal", { validate: value => value === specificDetail?.strMeal })} />
+                            <input placeholder="Input original food price without dollar sign" defaultValue="" {...register("strPrice", { validate: value => value === specificDetail?.strPrice })} />
                             <input placeholder="Address" defaultValue="" {...register("address")} />
-                            <input placeholder="City" defaultValue="" {...register("city")} />
                             <input placeholder="phone number" defaultValue="" {...register("phone")} />
 
                             <input type="submit" />
