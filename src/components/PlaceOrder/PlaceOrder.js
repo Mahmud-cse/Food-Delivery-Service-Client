@@ -12,13 +12,13 @@ const PlaceOrder = () => {
     const [specificDetail, setSpecificDetail] = useState({});
 
     useEffect(() =>
-        fetch("/data.json")
+        fetch("http://localhost:5000/services")
             .then(res => res.json())
             .then(data => setDetails(data)), []);
 
     useEffect(() => {
         if (details.length > 0) {
-            const matchedData = details.find(detail => detail.idMeal == id);
+            const matchedData = details.find(detail => detail._id == id);
             setSpecificDetail(matchedData);
         }
     }, [details]);

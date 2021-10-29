@@ -3,19 +3,19 @@ import { Row } from 'react-bootstrap';
 import ServiceList from '../ServiceList/ServiceList';
 
 const Services = () => {
-    const [item,setItem]=useState([]);
+    const [item, setItem] = useState([]);
 
-    useEffect(()=>{
-        fetch('/data.json')
-        .then(res=>res.json())
-        .then(data=>setItem(data));
-    },[]);
+    useEffect(() => {
+        fetch('http://localhost:5000/services')
+            .then(res => res.json())
+            .then(data => setItem(data));
+    }, []);
 
     return (
         <div>
             <Row>
                 {
-                    item.map(value=><ServiceList key={value.id} value={value}/>)
+                    item.map(value => <ServiceList key={value.id} value={value} />)
                 }
             </Row>
         </div>

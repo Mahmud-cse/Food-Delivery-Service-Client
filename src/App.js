@@ -14,6 +14,7 @@ import AuthProvider from './components/Context/AuthProvider';
 import MyOrders from './components/MyOrders/MyOrders';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import AddanItem from './components/AddanItem/AddanItem';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route exact path="/home">
               <Home />
+            </Route>
+            <Route exact path="/addItem">
+              <AddanItem />
             </Route>
             <PrivateRoute exact path="/orders">
               <MyOrders />
