@@ -27,6 +27,7 @@ const MyOrderList = (props) => {
                         alert("deleted successfully")
                         const remaining = orders.filter(order => order._id !== id);
                         setOrders(remaining);
+                        window.location.reload();
                     }
 
                 })
