@@ -11,7 +11,7 @@ const AllOrdersList = (props) => {
         const confirm = window.confirm("are you sure ?");
 
         if (confirm === true) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://pacific-stream-31901.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: "DELETE"
             })
@@ -30,7 +30,7 @@ const AllOrdersList = (props) => {
     }
 
     const handleUpdate = (id) => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://pacific-stream-31901.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

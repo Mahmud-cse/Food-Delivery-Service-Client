@@ -12,7 +12,7 @@ const PlaceOrder = () => {
     const [specificDetail, setSpecificDetail] = useState({});
 
     useEffect(() =>
-        fetch("http://localhost:5000/services")
+        fetch("https://pacific-stream-31901.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setDetails(data)), []);
 
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
     const { user } = useAuth();
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://pacific-stream-31901.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
