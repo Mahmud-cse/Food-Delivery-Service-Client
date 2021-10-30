@@ -31,19 +31,37 @@ const NavBar = () => {
                   fontWeight: "bold",
                   color: "black"
                 }}>Home</NavLink>
-                <NavLink to="/myOrders" className="f-13" style={{ color: "black" }} activeStyle={{
-                  fontWeight: "bold",
-                  color: "black"
-                }}>My Orders</NavLink>
-                <NavLink to="/allOrders" className="f-13" style={{ color: "black" }} activeStyle={{
-                  fontWeight: "bold",
-                  color: "black"
-                }}>All Orders</NavLink>
 
-                <NavLink to="/addItem" className="f-13" style={{ color: "black" }} activeStyle={{
-                  fontWeight: "bold",
-                  color: "black"
-                }}>Add an Item</NavLink>
+                {
+                  user.displayName || user.email ?
+                    <NavLink to="/myOrders" className="f-13" style={{ color: "black" }} activeStyle={{
+                      fontWeight: "bold",
+                      color: "black"
+                    }}>My Orders</NavLink>
+                    :
+                    ""
+                }
+
+                {
+                  user.displayName || user.email ?
+                    <NavLink to="/allOrders" className="f-13" style={{ color: "black" }} activeStyle={{
+                      fontWeight: "bold",
+                      color: "black"
+                    }}>All Orders</NavLink>
+                    :
+                    ""
+                }
+
+                {
+                  user.displayName || user.email ?
+                    <NavLink to="/addItem" className="f-13" style={{ color: "black" }} activeStyle={{
+                      fontWeight: "bold",
+                      color: "black"
+                    }}>Add an Item</NavLink>
+                    :
+                    ""
+                }
+
                 {
                   user.displayName || user.email ?
                     <NavLink to="" onClick={signOutUsingGoogle} className="f-13" style={{ color: "black" }} activeStyle={{

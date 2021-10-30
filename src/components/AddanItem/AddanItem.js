@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router';
 
 const AddanItem = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const history = useHistory();
 
     const onSubmit = data => {
         fetch('https://pacific-stream-31901.herokuapp.com/addService', {
@@ -18,6 +20,7 @@ const AddanItem = () => {
                 if (result.insertedId) {
                     alert('Order processed Successfully');
                     reset();
+                    history.push('/home');
                 }
             })
     };
