@@ -15,6 +15,7 @@ import MyOrders from './components/MyOrders/MyOrders';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AddanItem from './components/AddanItem/AddanItem';
+import AllOrders from './components/AllOrders/AllOrders';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <PrivateRoute exact path="/myOrders">
               <MyOrders />
+            </PrivateRoute>
+            <PrivateRoute exact path="/allOrders">
+              <AllOrders />
             </PrivateRoute>
             <PrivateRoute exact path="/placeOrder/:id">
               <PlaceOrder />

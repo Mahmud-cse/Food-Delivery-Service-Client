@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
-
-const MyOrderList = (props) => {
-    const { _id, strMeal, strPrice, status } = props.data;
+const AllOrdersList = (props) => {
+    const { _id, strMeal, strPrice, status } = props.order;
     const [orders, setOrders] = useState([]);
+    const value = "approved ";
 
-    useEffect(() => {
-        fetch("http://localhost:5000/orders")
-            .then(res => res.json())
-            .then(data => setOrders(data));
-    }, []);
 
     const handleDelete = (id) => {
         const confirm = window.confirm("are you sure ?");
@@ -35,6 +29,23 @@ const MyOrderList = (props) => {
 
     }
 
+    const handleUpdate = (id) => {
+        const url = `http://localhost:5000/orders/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    alert('Updated successfully');
+                    window.location.reload();
+                }
+            })
+    }
+
     return (
         <Col md={4} className="mb-5 mt-5" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Card data-aos="fade-up" className="border-0 rounded-3 cardStyle p-4" style={{ color: "white", backgroundColor: "gray", width: '18rem' }}>
@@ -45,12 +56,13 @@ const MyOrderList = (props) => {
                     </Card.Title>
                 </Card.Body>
                 <Card.Text style={{ marginLeft: "17px" }}><b>Status</b>: {status}</Card.Text>
-                <div className="mb-3" style={{ marginLeft: "18px" }}>
-                    <Button onClick={() => handleDelete(_id)} variant="danger">Delete</Button>
+                <div className="mb-3">
+                    <Button style={{ marginLeft: "18px" }} onClick={() => handleDelete(_id)} variant="danger">Delete</Button>
+                    <Button style={{ marginLeft: "18px" }} onClick={() => handleUpdate(_id)} variant="success">Update</Button>
                 </div>
             </Card>
         </Col>
     );
 };
 
-export default MyOrderList;
+export default AllOrdersList;
