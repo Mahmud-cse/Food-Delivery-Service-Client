@@ -33,7 +33,7 @@ function App() {
             <Route exact path="/addItem">
               <AddanItem />
             </Route>
-            <PrivateRoute exact path="/orders">
+            <PrivateRoute exact path="/myOrders">
               <MyOrders />
             </PrivateRoute>
             <PrivateRoute exact path="/placeOrder/:id">

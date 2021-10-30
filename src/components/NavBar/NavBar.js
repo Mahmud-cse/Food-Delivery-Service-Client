@@ -31,7 +31,7 @@ const NavBar = () => {
                   fontWeight: "bold",
                   color: "black"
                 }}>Home</NavLink>
-                <NavLink to="/orders" className="f-13" style={{ color: "black" }} activeStyle={{
+                <NavLink to="/myOrders" className="f-13" style={{ color: "black" }} activeStyle={{
                   fontWeight: "bold",
                   color: "black"
                 }}>My Orders</NavLink>
